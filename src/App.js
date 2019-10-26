@@ -56,15 +56,17 @@ function App() {
 
 
     return (
-        <div className="App">
-            {square.map((item, index) => (
-                <div key={index} onClick={handleClick} data={index}>
-                    {item}
+        <div className='wrapper'>
+            <div className="App">
+                {square.map((item, index) => (
+                    <div key={index} onClick={handleClick} data={index}>
+                        {item}
+                    </div>
+                ))}
+
+                <div className="winner-line">
+
                 </div>
-            ))}
-
-            <div className="winner-line">
-
             </div>
         </div>
     );

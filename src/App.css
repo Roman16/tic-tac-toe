@@ -1,3 +1,10 @@
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .App {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +12,16 @@
     width: 300px;
     height: 300px;
     border: 1px solid black;
-    margin: 100px auto;
+    background: #fff;
+    z-index: 1000;
+}
+
+.wrapper {
+    border-radius: 10px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 3px 200px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 200px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 200px 0px rgba(0, 0, 0, 0.75);
 }
 
 .App > div {
@@ -33,36 +49,42 @@
     width: 350px;
     height: 5px;
 }
+
 .winner-line.line-1 {
     left: -25px;
     top: 150px;
     width: 350px;
     height: 5px;
 }
+
 .winner-line.line-2 {
     left: -25px;
     top: 250px;
     width: 350px;
     height: 5px;
 }
+
 .winner-line.line-3 {
     left: 50px;
     top: -25px;
     width: 5px;
     height: 350px;
 }
+
 .winner-line.line-4 {
     left: 150px;
     top: -25px;
     width: 5px;
     height: 350px;
 }
+
 .winner-line.line-5 {
     left: 250px;
     top: -25px;
     width: 5px;
     height: 350px;
 }
+
 .winner-line.line-6 {
     left: 148px;
     top: -75px;
@@ -70,6 +92,7 @@
     height: 450px;
     transform: rotate(-45deg);
 }
+
 .winner-line.line-7 {
     left: 148px;
     top: -75px;
